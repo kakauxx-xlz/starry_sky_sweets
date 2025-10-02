@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doces Céu Estrelado</title>
+  <style>
+    /* Fundo inspirado em Van Gogh - Noite Estrelada */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      text-align: center;
+      border-bottom: 3px solid #ffd700;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    header p {
+      font-size: 1.2em;
+      color: #ffd700;
+    }
+
+    nav {
+      background: rgba(0,0,0,0.6);
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #ffd700;
+      text-shadow: 0px 0px 8px #fff;
+    }
+
+    .container {
+      padding: 30px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.65);
+      border-radius: 15px;
+      padding: 20px;
+      margin: 15px;
+      display: inline-block;
+      width: 220px;
+      backdrop-filter: blur(5px);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.7);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .card h3 {
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+    .card p {
+      margin: 0;
+      font-size: 14px;
+      color: #ffd700;
+    }
+
+    button {
+      background: #ffd700;
+      border: none;
+      color: black;
+      padding: 10px 20px;
+      margin-top: 10px;
+      cursor: pointer;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #ffeb3b;
+      box-shadow: 0px 0px 10px #fff;
+    }
+
+    footer {
+      background: rgba(0,0,0,0.8);
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+      border-top: 3px solid #ffd700;
+    }
+
+    @media(max-width: 768px){
+      .card { width: 80%; margin: 15px auto; }
+      nav { flex-direction: column; }
+      nav a { margin: 8px 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🍬 Doces Céu Estrelado 🍬</h1>
+    <p>Delícias inspiradas na arte de Van Gogh ✨</p>
+  </header>
+
+  <nav>
+    <a href="#">Início</a>
+    <a href="#">Doces</a>
+    <a href="#">Promoções</a>
+    <a href="#">Contato</a>
+  </nav>
+
+  <div class="container">
+    <h2>Nossos Doces</h2>
+
+    <div class="card">
+      <img src="https://i.ibb.co/fk2T7wY/chocolate-truffle.jpg" alt="Trufa de Chocolate">
+      <h3>Trufa de Chocolate</h3>
+      <p>Irresistível e cremosa</p>
+      <button>Comprar</button>
+    </div>
+
+    <div class="card">
+      <img src="https://i.ibb.co/YdGj4S7/macarons.jpg" alt="Macarons">
+      <h3>Macarons</h3>
+      <p>Coloridos e delicados</p>
+      <button>Comprar</button>
+    </div>
+
+    <div class="card">
+      <img src="https://i.ibb.co/h1F9VZc/cupcake.jpg" alt="Cupcake">
+      <h3>Cupcake</h3>
+      <p>Fofo e saboroso</p>
+      <button>Comprar</button>
+    </div>
+
+    <div class="card">
+      <img src="https://i.ibb.co/7JzVZCm/bala.jpg" alt="Bala de Goma">
+      <h3>Bala de Goma</h3>
+      <p>Doce divertido para todos</p>
+      <button>Comprar</button>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Doces Céu Estrelado - Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>
